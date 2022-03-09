@@ -21,6 +21,7 @@ variable "bucket" {
 
 variable "content" {    
     type = string
+    default = "Hello from terraform cloud"
 } 
 
 provider "aws" {
