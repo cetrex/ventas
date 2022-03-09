@@ -10,6 +10,19 @@ variable "AWS_ACCESS_KEY_ID" {}
 
 variable "AWS_SECRET_ACCESS_KEY" {}
 
+variable "region" {
+    type = string
+    default = "us-east-2"
+}
+variable "bucket" {
+    type = string
+    default = "cesarwebbucket1"
+}
+
+variable "content" {    
+    type = string
+} 
+
 provider "aws" {
     access_key = var.AWS_ACCESS_KEY_ID
     secret_key = var.AWS_SECRET_ACCESS_KEY
